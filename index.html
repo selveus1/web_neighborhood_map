@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Greenwich Village Restaurants</title>
+		
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.sweet-modal.min.css" />
+		
+
+	</head>
+	<body>
+		<div class="container">	
+
+			
+			<h1 class="header-div">Greenwich Village Restaurants</h1>
+	
+			
+			<div class="options-div"> 
+				<h3>Find A Restaurant</h3>
+
+				<!-- show / hide listings -->
+				<div class="row options-subbox">
+					
+					<div class="btn">
+						<input id="show-listings" type="button" value="Show Restaurants" data-bind="click: showLocations">
+					</div>
+					
+
+					<div class="btn">
+						<input id="hide-listings" type="button" value="Hide Restaurants" data-bind="click: hideLocations">
+					</div>
+					
+				</div>
+
+				<br>
+
+				<!-- filtering input -->
+				<div class="row">
+					
+					<input type="text" class="col-12" name="Filter" placeholder="Filter out restaurants" data-bind="textInput: input, event: {keyup: filter}">
+				</div>	
+
+				<br>
+
+				<!-- view listings when on a smaller screen -->
+				<div class="filter-toggle-div">
+
+					<div class="btn">
+						<input id="show-filter" type="button" value="Show Filtered Results" data-bind="click: showFltrResults">
+					</div>					
+
+					<div class="btn">
+						<input id="hide-filter" type="button" value="Hide Filtered Results" data-bind="click: hideFltrResults">
+					</div>
+				</div>
+
+				
+				<!-- listings -->
+				<div class="listings-div" id="locales" data-bind="visible: shouldShowLocales">
+					<h4>Restaurants</h4>
+					<ul data-bind="foreach: filtered_locations">
+						<li data-bind="text: $data.name, click: $parent.showMarkerFromList"></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<!-- div holding the map -->
+			<div id="map-div"></div>
+
+		</div>
+
+
+		
+		<script src="js/knockout-3.4.2.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" onerror="ajaxError()"></script>
+		<script src="js/jquery.sweet-modal.min.js"></script>
+		<script src="js/app.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdVaqZpWK68kxWIYRRiyCFAsbFbs_43V4&v=3&libraries=places&callback=initialize" onerror="mapError()"></script>
+
+		
+	</body>
+</html>

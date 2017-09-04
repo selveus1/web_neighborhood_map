@@ -1,0 +1,161 @@
+/*
+    Author :        Sheena Elveus
+    Date   :        August 2017
+    Description:    CSS file to add responsive breakpoints to markup.
+*/
+
+
+/* media queries for responsiveness */
+@media screen and (max-width: 550px){
+
+    /*
+        + remove options sidebar from view
+        + have option sidebar slide in
+        + add sandwich icon to header
+    */
+
+    h1{
+        font-size: 1.50em;
+    }
+
+    .options-div{
+        width: 100%;
+    }
+
+    .map-div{
+        height: 40%;
+    }
+
+    .filter-toggle-div{
+        width:      100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*.listings-div{
+        display: none;
+    }*/
+
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 950px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-div{
+        width: 100%;
+    }
+
+    .options-div{
+        width: 40%;
+    }
+
+    .filter-toggle-div{
+        display: none;
+    }
+
+    .listings-div{
+        visibility: visible;
+        display: block !important;
+    }
+
+    #map-div{
+        width: 60%;
+    }
+}
+
+
+@media screen and (min-width: 951px) and (max-width: 1150px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-div{
+        width: 100%;
+    }
+
+    .options-div{
+        width: 35%;
+    }
+
+    .filter-toggle-div{
+        display: none;
+    }
+
+    .listings-div{
+        visibility: visible;
+        display: block !important;
+    }
+
+    #map-div{
+        width: 65%;
+    }
+}
+
+
+@media screen and (min-width: 1151px) and (max-width: 1650px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-div{
+        width: 100%;
+    }
+
+    .options-div{
+        width: 25%;
+    }
+
+    .filter-toggle-div{
+        display: none;
+    }
+
+    .listings-div{
+        visibility: visible;
+        display: block !important;
+    }
+
+    #map-div{
+        width: 75%;
+    }
+}
+
+
+
+@media screen and (min-width: 1651px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-div{
+        width: 100%;
+    }
+
+    .options-div{
+        width: 20%;
+    }
+
+    .filter-toggle-div{
+        display: none;
+    }
+
+    .listings-div{
+        visibility: visible;
+        display: block !important;
+    }
+
+    #map-div{
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,141 @@
+/*
+    Author :        Sheena Elveus
+    Date   :        August 2017
+    Description:    CSS file to add primary styles to the site.
+*/
+
+.row {
+    width:      100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width:  8.33%;
+}
+
+.col-2 {
+    width:  16.66%;
+}
+
+.col-3 {
+    width:  25%;
+}
+
+.col-4 {
+    width:  33.33%;
+}
+
+.col-5 {
+    width:  41.66;
+}
+
+.col-6 {
+    width:  50%;
+}
+
+.col-7 {
+    width:  58.33%;
+}
+
+.col-8 {
+    width:  66.66%;
+}
+
+.col-9 {
+    width:  75%;
+}
+
+.col-10 {
+    width:  83.33%;
+}
+
+.col-11 {
+    width:  91.66%;
+}
+
+.col-12 {
+    width:  100%;
+}
+
+* {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	-ms-box-sizing:		border-box;
+	box-sixing:			border-box;
+}
+	
+html, body{
+	font-family: Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+    height: 100%;
+}
+
+.container {
+	height: 100%;
+	position: relative;
+}
+
+
+h1, h2, h3, h4{
+	text-align: center;
+}
+
+
+
+.options-div{
+	background-color: #212121;
+	color: white;
+	padding: 7px;
+}
+
+
+
+.header-div{
+    background-color: #414349;
+    color: white;
+    padding: 5px;
+    margin: 0px auto; 
+}
+
+
+#map-div{
+    height: 110%;
+	bottom: 0px;
+}
+
+
+.options-subbox{
+	border-bottom: 1px solid gray;
+	padding: 5px;
+}
+
+
+.text{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.btn{
+    margin: 0px auto;
+    padding-bottom: 10px;
+}
+
+input{
+	margin: 0px auto;
+}
+
+li:hover{
+	color: yellow;
+	cursor: pointer;
+}
+
+
+
+/* Google Maps DOM elements */
+#pano {
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
